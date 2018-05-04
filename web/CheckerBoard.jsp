@@ -57,6 +57,8 @@
 
 %>
 
+
+
 <% for (int currentRow = 0; currentRow < rows; currentRow++) { %>
     <%--<div class="row">--%>
         <%for (int currentCol = 0; currentCol < cols; currentCol++) { %>
