@@ -56,14 +56,40 @@
 //    }
 
 %>
+
 <% for (int currentRow = 0; currentRow < rows; currentRow++) { %>
     <%--<div class="row">--%>
-        <%for (int currentCol = 0; currentCol < (cols/2); currentCol++) { %>
-    <div class="dark_square">DARK</div>
-    <div class="light_square">LIGHT</div>
-        <% } %><br/>
+        <%for (int currentCol = 0; currentCol < cols; currentCol++) { %>
+            <% if (currentRow % 2 == 0) { %>
+                <% if (currentCol % 2 == 0) { %>
+                    <div class="dark_square">DARK</div>
+                <% } else { %>
+                    <div class="light_square">LIGHT</div>
+                <%}%>
+            <%} else { %>
+                <% if (currentCol % 2 == 0) { %>
+                    <div class="light_square">LIGHT</div>
+                <% } else { %>
+                    <div class="dark_square">DARK</div>
+                <%}%>
+            <% } %>
     <%--</div>--%>
+    <% }%><br/>
 <% }%>
+
+<%--<% for (int currentRow = 0; currentRow < rows; currentRow++) { %>--%>
+    <%--&lt;%&ndash;<div class="row">&ndash;%&gt;--%>
+        <%--<%for (int currentCol = 0; currentCol < (Math.ceil(cols/2)); currentCol++) { %>--%>
+            <%--<% if (currentRow % 2 == 0) { %>--%>
+                <%--<div class="dark_square">DARK</div>--%>
+                <%--<div class="light_square">LIGHT</div>--%>
+           <%--<% } else { %>--%>
+                <%--<div class="light_square">LIGHT</div>--%>
+                <%--<div class="dark_square">DARK</div>--%>
+            <%--<%}%>--%>
+        <%--<% } %><br/>--%>
+    <%--&lt;%&ndash;</div>&ndash;%&gt;--%>
+<%--<% }%>--%>
 
 
 <%!
