@@ -1,0 +1,41 @@
+body{
+    background-color: rgba(27, 39, 102, 0.4);
+
+}
+
+.container {
+    padding: 2%;
+    width: 95vw;
+    height: 95vw;
+    color: rgb(31, 18, 62);
+    background-color: rgba(27, 39, 102, 0.11);
+    border: 3px solid lightseagreen;
+    border-radius: 10px;
+}
+
+.light_square {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border: 1px solid white;
+    vertical-align: top;
+    margin:1px;
+
+}
+
+.dark_square{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border: 1px solid orange;
+    vertical-align: top;
+    color:white;
+    margin:1px;
+
+}
+
+.row {
+    display:inline;
+}
